@@ -60,7 +60,7 @@
       <section class="start">
         <div class="container">
           <h1 class="start-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="start-button button" type="button">
+          <button class="start-button button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -131,27 +131,38 @@
           <h2 class="about-title">Чим ми займаємося</h2>
           <ul class="list">
             <li class="about-img">
-              <img
+              <div class="about-wrapper">
+<img
                 src="./images/squoosh/boxone.jpg"
                 alt="Робота1"
                 width="370"
               />
+              <div class="doing">Десктопні додатки</div>
+            </div>
             </li>
-            <li class="about-img">
-              <img
+              
+              <li class="about-img">
+              <div class="about-wrapper">
+<img
                 src="./images/squoosh/boxtwo.jpg"
                 alt="Робота2"
                 width="370"
               />
+              <div class="doing">Мобільні додатки</div>
+              </div>
             </li>
+
             <li class="about-img">
-              <img
+              <div class="about-wrapper">
+<img
                 src="./images/squoosh/boxthree.jpg"
                 alt="Робота3"
                 width="370"
               />
+              <div class="doing">Дизайнерські рішення</div>
+              </div>
             </li>
-          </ul>
+                        </ul>
         </div>
       </section>
       <!-- TEAM -->
@@ -397,8 +408,15 @@
               </ul>
               </div>
       </div>
-      
-      
+            
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+ <div class="modal">
+<div class="close-sign" data-modal-close>
+  <img src="./images/squoosh/close.jpg" alt="close" width="30">
+</div>
+ </div>
+ </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
